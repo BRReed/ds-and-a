@@ -13,9 +13,12 @@ class TestSwap(unittest.TestCase):
 
     def test_swap_equal(self):
         array = [6, 5, 4, 34, 8, 9]
-        self.assertEqual(isort.swap(array, 1), [5, 6, 4, 34, 8, 9])
-        self.assertEqual(isort.swap(array, 5), [5, 6, 4, 34, 9, 8])
-        self.assertEqual(isort.swap(array, 4), [5, 6, 4, 9, 34, 8])
+        isort.swap(array, 1)
+        self.assertEqual(array, [5, 6, 4, 34, 8, 9])
+        isort.swap(array, 5)
+        self.assertEqual(array, [5, 6, 4, 34, 9, 8])
+        isort.swap(array, 4)
+        self.assertEqual(array, [5, 6, 4, 9, 34, 8])
 
     def test_swap_not_equal(self):
         array = [6, 5, 4, 34, 8, 9]
