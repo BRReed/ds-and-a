@@ -16,5 +16,3 @@ def swap(array, i):
 
 
 
-print(insertion_sort([5, 6, 4, 6, 2, 1, 7, 4]))
-print(insertion_sort([9, 19, 85, 99, 32, 0, 33, 123, 34, 33, 12]))
